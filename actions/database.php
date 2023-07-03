@@ -13,3 +13,5 @@ function connexion ($servername="localhost",$dbname="forum",$username="root",$pa
     return $connexion ;
     
 }
+$conn=connexion();
+?>

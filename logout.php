@@ -1,4 +1,4 @@
 <?php
-require('actions/logoutAction.php');
+require('actions/users/logoutAction.php');
 
 ?>
