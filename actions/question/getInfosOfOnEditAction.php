@@ -2,6 +2,7 @@
 require('actions/database.php');
 $conn=connexion();
 
+
 // valider le formulaire
 if(isset($_GET['id']) AND !empty($_GET['id'])){
     //verifier si les champs ne sont pas vide

@@ -25,6 +25,7 @@ while($question = $getAllMyQuestions->fetch()){
     </p>
     <a href="#" class="btn btn-primary">Acceder à la question</a>
     <a href="edit-question.php?id=<?=$question['id'];?>" class="btn btn-warning ">Modifier la question</a>
+    <a href="actions/question/deleteQuestionAction.php?id=<?=$question['id'];?>" class="btn btn-danger ">Supprimer la question</a>
   </div>
 </div>
 <br>
