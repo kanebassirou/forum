@@ -1,5 +1,7 @@
 <?php
 require('actions/database.php');
+$conn=connexion();
+
 // VALIDATION DES DONNNES DANS FORMULAIRE
 if(isset($_POST['validate'])){
     // Verifier si user à t'il remplir tous les champs dans la formulaire

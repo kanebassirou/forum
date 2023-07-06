@@ -2,7 +2,6 @@
 <html lang="en">
     <?php include"includes/head.php";?>
    <?php require"actions/question/signupAction.php"; 
-   $conn=connexion();
 
     ?>
 

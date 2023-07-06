@@ -1,5 +1,7 @@
 <?php
 require 'actions/database.php';
+$conn=connexion();
+
 if (isset($_POST['validate'])) {
     // Vérifier si l'utilisateur est connecté
     if (isset($_SESSION['id'])) {

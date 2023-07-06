@@ -1,5 +1,7 @@
 <?php
 require('actions/database.php');
+$conn=connexion();
+
 
 // VALIDATION DES DONNÉES DANS LE FORMULAIRE
 if(isset($_POST['validate'])) {
