@@ -23,7 +23,9 @@ require('actions/question/showAllAnwserOfQuestionAction.php');
         <hr>
         <p><?=$question_contenu;?></p>
         <hr>
-        <small><?=$question_pseudoAuteur . '' . $question_datePublication; ?></small>
+        <small>
+            <?= '<a href="profile.php?id='.$question_IdAuteur.'">'.$question_pseudoAuteur . '</a> '  . $question_datePublication; ?>
+        </small>
         </section>
         <br>
         <div class="section show-answers">
@@ -41,7 +43,7 @@ require('actions/question/showAllAnwserOfQuestionAction.php');
             ?>
             <div class="card">
                 <div class="card-header">
-                    <?= $answer['pseudo_auteur'];?>
+                   <a href="profile.php?id=<?=$answer['id_auteur']?>;"> <?= $answer['pseudo_auteur'];?></a>
 
                 </div>
                 <div class="card-body">

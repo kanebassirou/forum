@@ -29,7 +29,9 @@ require('actions/question/showAllQuestion.php')
       ?>
       <div class="card">
          <div class=card-header>
-           <a href="article.php?id=<?=$question['id'];?>"><?=$question['titre'];?></a> 
+           <a href="article.php?id=<?=$question['id'];?>">
+           <?=$question['titre'];?>
+         </a> 
             
          </div>
          <div class="card-body">
@@ -37,7 +39,8 @@ require('actions/question/showAllQuestion.php')
 
          </div>
          <div class="card-footer">
-            Publié par  <?=$question['pseudo_auteur'];?> le  <?=$question['date_publication'];?>
+            Publié par  <a href="profile.php?id=<?=$question['id_auteur']?>;"><?=$question['pseudo_auteur'];?> </a>
+             le  <?=$question['date_publication'];?>
 
          </div>
       </div>
