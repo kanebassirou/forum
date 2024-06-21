@@ -14,7 +14,7 @@ if(isset($getThisQuestion)){
     ?>
     <div class="card">
         <div class="card-body">
-            <h4><?= $user_pseudo?></h4>
+            <h4>@<?= $user_pseudo?></h4>
             <hr>
             <p><?= $user_lastname . ' ' . $user_firstname?></p>
         </div>
@@ -33,8 +33,6 @@ if(isset($getThisQuestion)){
             </div>
             <div class="card-footer">
             <?= $question['pseudo_auteur']; ?> le <?= $question['date_publication']; ?>
-
-
 
             </div>
         </div>
